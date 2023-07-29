@@ -1,0 +1,19 @@
+.imageContainer {
+    height: 400px;
+}
+
+.dropdown-toggle {
+    border-color: #ced4da;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    height: 3rem;
+}
+
+.form-control {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
