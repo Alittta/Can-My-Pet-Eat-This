@@ -4,6 +4,7 @@ import BootstrapWrapper from './BootstrapWrapper';
 import Header from './Layout/Header';
 import Searchbar from './UI/Searchbar';
 import FoodList from './Food-List/FoodList';
+import BackToTopBtn from './UI/BackToTopBtn';
 
 function App() {
   const [foodList, setFoodList] = useState([]);
@@ -50,6 +51,7 @@ function App() {
         <Header />
         <Searchbar onSearch={searchHandler}/>
         <FoodList foodList={foodList} searchQuery={searchQuery} selectedCategory={selectedCategory}/>
+        <BackToTopBtn />
       </div>
     </BootstrapWrapper>
   );
