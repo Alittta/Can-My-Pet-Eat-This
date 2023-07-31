@@ -17,3 +17,7 @@
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
 }
+
+.input-group .btn {
+    z-index: 0;
+}

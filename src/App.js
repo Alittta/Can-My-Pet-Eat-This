@@ -1,7 +1,7 @@
 // App.js
 import React, { useCallback, useEffect, useState } from 'react';
 import BootstrapWrapper from './BootstrapWrapper';
-import Header from './Layout/Header';
+import Navbar from './Layout/Navbar';
 import Searchbar from './UI/Searchbar';
 import FoodList from './Food-List/FoodList';
 import BackToTopBtn from './UI/BackToTopBtn';
@@ -48,7 +48,7 @@ function App() {
   return (
     <BootstrapWrapper>
       <div className="App">
-        <Header />
+        <Navbar />
         <Searchbar onSearch={searchHandler}/>
         <FoodList foodList={foodList} searchQuery={searchQuery} selectedCategory={selectedCategory}/>
         <BackToTopBtn />

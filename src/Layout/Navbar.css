@@ -1,0 +1,15 @@
+.navbar {
+    position: fixed;
+    width: 100%; 
+    display: block;
+    z-index: 1;
+}
+
+.navbar-brand {
+    color: #193153 !important;
+    font-weight: 800;
+}
+
+.fa-bone {
+    rotate: 135deg;
+}
