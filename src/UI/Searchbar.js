@@ -26,7 +26,7 @@ const Searchbar = ({ onSearch }) => {
 
   return (
     <div className="d-flex justify-content-center imageContainer" style={{ backgroundImage: `url(${backgroundImage})` }}>
-      <div className="col-6 d-flex align-items-center">
+      <div className="col-lg-6 d-flex align-items-center">
           <div className="input-group mb-3">
             <div className="input-group-prepend">
               <button

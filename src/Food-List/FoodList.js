@@ -29,22 +29,25 @@ const FoodList = ({ foodList, searchQuery, selectedCategory }) => {
   
   return (
     <div>
-      {!isEmpty && <div className='col-9 offset-2 mt-5'>
+      {!isEmpty && <div className='mx-5 mt-5'>
         <div className="row">
           {filteredFoodList.map((food) => (
-            <div key={food.id} className="col-md-4 mb-4">
+            <div key={food.id} className="col-md-3 mb-4">
               <div className="card d-flex flex-column h-100"> 
                 <div className='m-3 flex-grow-1'> 
-                  <div className='d-flex'>
-                    <h3>{food.name}</h3>
+                  <div className='d-flex border-bottom mb-2'>
+                    <div>
+                      <h3 className='card-title'>{food.name}</h3>
+                      <h6 className='card-subtitle mb-2 text-muted'>Category: {food.category}</h6>
+                    </div>
                     <p className='ms-auto'>
                       {food.cat && <img src={CatIcon} alt="Cats" style={{height: "2rem"}} />} 
                       {food.dog && <img src={DogIcon} alt="Dog" style={{height: "2rem"}} />}  
                       {!food.dog && !food.cat && <img src={NoPetsIcon} alt="No Pets" style={{height: "2rem"}} />}
                     </p>
                   </div>
-                  <p>Category: {food.category}</p>
-                  {food.instructions && <p><img src={WarningIcon} style={{height: "1.5rem", marginBottom: '5px' }}/> Warning: {food.instructions}</p>}
+                  {food.benefits && <p><span className='text-success'>Benefits</span>: {food.benefits}</p>}
+                  {food.instructions && <p class="card-text"><img src={WarningIcon} style={{height: "1.5rem", marginBottom: '5px' }}/> <b>Warning</b>: {food.instructions}</p>}
                 </div>
               </div>
             </div>
