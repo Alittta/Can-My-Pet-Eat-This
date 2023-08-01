@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
-import { faCopyright } from '@fortawesome/free-solid-svg-icons';
+import { faCopyright, faBone } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 
@@ -12,6 +12,7 @@ const Footer = () => {
     return (
         <Fragment>
             <footer id="footer" className='text-center text-lg-start bg-light text-muted'>
+                <a className="navbar-brand d-flex justify-content-center" href="#"><FontAwesomeIcon icon={faBone} /> Can My Pet Eat This?</a>
                 <section class="d-flex justify-content-center p-4 border-bottom">
                 <div class="me-3 d-none d-lg-block">
                     <span>Get connected with me:</span>
