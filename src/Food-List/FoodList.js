@@ -4,9 +4,10 @@ import CatIcon from '../Assets/icon_cat.png';
 import DogIcon from '../Assets/icon_dog.png';
 import WarningIcon from '../Assets/icon-warning.png';
 import NoPetsIcon from '../Assets/icon-no-pet.png';
-import EmptyMsgCat from '../Assets/cat.png';
+import ErrorMsg from '../UI/ErrorMsg';
 
 const FoodList = ({ foodList, searchQuery, selectedCategory }) => {
+  const errorMsg = "Oops! looks like we couldn't find any matches!";
   const [isEmpty, setIsEmpty] = useState(false);
 
   const filteredFoodList = foodList.filter((food) => {
@@ -49,19 +50,9 @@ const FoodList = ({ foodList, searchQuery, selectedCategory }) => {
             </div>
           ))}
         </div>
-      </div>}
-      {isEmpty && (
-        <div className='col-12 text-center mt-5'>
-          <div className="row justify-content-center align-items-center">
-            <div className="col-12">
-              <h3>Oops! Looks like we couldn't find any matches!</h3>
-            </div>
-            <div className="col-12">
-              <img src={EmptyMsgCat} style={{ height: "20rem", width: "20rem", marginBottom: '5px' }} alt="Empty Message" />
-            </div>
-          </div>
-        </div>
-      )}
+      </div>
+      } 
+      {isEmpty && <ErrorMsg msg={errorMsg}/>}
     </div>
   );
 };

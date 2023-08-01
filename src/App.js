@@ -5,6 +5,7 @@ import Navbar from './Layout/Navbar';
 import Searchbar from './UI/Searchbar';
 import FoodList from './Food-List/FoodList';
 import BackToTopBtn from './UI/BackToTopBtn';
+import ErrorMsg from './UI/ErrorMsg';
 
 function App() {
   const [foodList, setFoodList] = useState([]);
@@ -37,7 +38,8 @@ function App() {
 
       setFoodList(loadedFoods);
     } catch (error) {
-      setError(error.message);
+      //setError(error.message); 
+      setError("Oops! something went wrong!"); // Better error msg
     }
   }, []);
 
@@ -45,12 +47,15 @@ function App() {
     fetchFoodHandler();
   }, [fetchFoodHandler]);
 
+  const isErrorEmpty = value => value === null || value.trim().length === '';
+
   return (
     <BootstrapWrapper>
       <div className="App">
         <Navbar />
         <Searchbar onSearch={searchHandler}/>
-        <FoodList foodList={foodList} searchQuery={searchQuery} selectedCategory={selectedCategory}/>
+        {!isErrorEmpty(error) && <ErrorMsg msg={error}/>} 
+        {isErrorEmpty(error) && <FoodList foodList={foodList} searchQuery={searchQuery} selectedCategory={selectedCategory}/>}
         <BackToTopBtn />
       </div>
     </BootstrapWrapper>
