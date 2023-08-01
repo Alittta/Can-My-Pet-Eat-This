@@ -6,6 +6,7 @@ import Searchbar from './UI/Searchbar';
 import FoodList from './Food-List/FoodList';
 import BackToTopBtn from './UI/BackToTopBtn';
 import ErrorMsg from './UI/ErrorMsg';
+import Footer from './Layout/Footer';
 
 function App() {
   const [foodList, setFoodList] = useState([]);
@@ -56,6 +57,7 @@ function App() {
         <Searchbar onSearch={searchHandler}/>
         {!isErrorEmpty(error) && <ErrorMsg msg={error}/>} 
         {isErrorEmpty(error) && <FoodList foodList={foodList} searchQuery={searchQuery} selectedCategory={selectedCategory}/>}
+        <Footer />
         <BackToTopBtn />
       </div>
     </BootstrapWrapper>

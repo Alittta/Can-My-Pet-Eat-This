@@ -32,7 +32,7 @@ const FoodList = ({ foodList, searchQuery, selectedCategory }) => {
       {!isEmpty && <div className='mx-5 mt-5'>
         <div className="row">
           {filteredFoodList.map((food) => (
-            <div key={food.id} className="col-md-3 mb-4">
+            <div key={food.id} className="col-md-4 mb-5">
               <div className="card d-flex flex-column h-100"> 
                 <div className='m-3 flex-grow-1'> 
                   <div className='d-flex border-bottom mb-2'>
