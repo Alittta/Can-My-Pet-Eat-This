@@ -25,9 +25,9 @@ Welcome to the Pet Food Recommendations project! This page serves as a comprehen
 This is a React js project. Make sure to have installed nodejs!
 
 bash
-$ git clone https://github.com/Alittta/Can-My-Pet-Eat-This.git
-$ cd Can-My-Pet-Eat-This
-$ npm install
+- $ git clone https://github.com/Alittta/Can-My-Pet-Eat-This.git
+- $ cd Can-My-Pet-Eat-This
+- $ npm install
 
 ## Usage
 
@@ -70,7 +70,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-### Disclaimer
+## Disclaimer
 While this project aims to provide useful information, it is essential to consult a qualified veterinarian or pet nutritionist for personalized recommendations for your pets. The AI-generated content may not be sourced from real-world databases or experts, and users are advised to use discretion when interpreting the data.
 
 Let's work together to ensure our beloved pets lead healthy and happy lives through informed food choices! 🐾
