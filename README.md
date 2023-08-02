@@ -22,11 +22,11 @@ Welcome to the Pet Food Recommendations project! This page serves as a comprehen
 
 ## Installation
 
-[Include instructions on how to install the project locally. List any dependencies that need to be installed and provide step-by-step guidance for setting up the development environment.]
+This is a React js project. Make sure to have installed nodejs!
 
 bash
-$ git clone https://github.com/your-username/your-repo.git
-$ cd project-folder
+$ git clone https://github.com/Alittta/Can-My-Pet-Eat-This.git
+$ cd Can-My-Pet-Eat-This
 $ npm install
 
 ## Usage
@@ -37,9 +37,9 @@ Explore the details of each food item, including its benefits and warnings, to u
 
 ## Technologies Used
 
-React: Frontend framework for building the user interface.
-FontAwesome: Icon library for visually representing different food categories.
-AI Chatbot: The food data presented on this platform is generated with the assistance of ChatGPT, an AI language model developed by OpenAI.
+- React: Frontend framework for building the user interface.
+- FontAwesome: Icon library for visually representing different food categories.
+- AI Chatbot: The food data presented on this platform is generated with the assistance of ChatGPT, an AI language model developed by OpenAI.
 
 
 ## Contributing
